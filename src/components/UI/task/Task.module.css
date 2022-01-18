@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+.task {
+    width: 100%;
+    height: 100px;
+    margin: 20px 0px;
+    box-shadow: 1px 3px 7px #a7a7a7;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.critical {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    margin-left: 20px;
+    background-color: rgb(231, 75, 75);
+}
+.high {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    margin-left: 20px;
+    background-color: rgb(217, 245, 92);
+}
+.low {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    margin-left: 20px;
+    background-color: rgb(113, 230, 109);
+}
+
+.infoContainer {
+    width: 80%;
+    height: 100%;
+    padding: 0px 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: space-around;
+    font-family: 'Be Vietnam Pro', sans-serif;
+}
+.description {
+    font-family: 'Roboto', sans-serif;
+    word-wrap: break-word;
+}
+.state {
+    width: 120px;
+    font-family: 'Roboto', sans-serif;
+}
+.remove {
+    width: 26px;
+    height: 26px;
+    border-radius: 13px;
+    font-size: 18px;
+    text-align: center;
+    cursor: pointer;
+    margin-right: 10px;
+    transition-duration: 200ms;
+}
+.remove:hover {
+    background-color: rgb(49, 49, 49);
+    color: #fff;
+}

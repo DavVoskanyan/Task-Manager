@@ -1,0 +1,12 @@
+.headBut {
+    padding: 10px 20px;
+    background-color: #fff;
+    border: 0px;
+    text-align: center;
+    cursor: pointer;
+    font-size: 20px;
+    transition-duration: 200ms;
+}
+.headBut:hover {
+    background-color: rgb(204, 202, 202);
+}

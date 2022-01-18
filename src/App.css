@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@1,100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.head {
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    box-shadow: 3px 5px 10px #a7a7a7;
+    position: absolute;
+    background-color: #fff;
+}
+.brand {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.logo {
+    width: 30px;
+    margin-right: 5px;
+}
+.projName {
+    font-family: 'Be Vietnam Pro', sans-serif;
+}
+.buttonList {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.taskDiv {
+    display: flex;
+}
+.newTask {
+    width: 27%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    box-shadow: 1px 3px 5px #a7a7a7;
+    padding: 3%;
+}
+.addNew {
+    font-family: 'Roboto', sans-serif;
+}
+.inp {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.alert {
+    color: red;
+    font-family: 'Roboto', sans-serif;
+}
+.notAlert {
+    margin-bottom: 18.4px;
+}
+
+.taskList {
+    width: 73%;
+    height: 100vh;
+    overflow-y: scroll;
+    padding: 70px 10px 10px 10px;
+}
+.noTasks {
+    margin: auto;
+    margin-top: 70px;
+    font-family: 'Roboto', sans-serif;
+}
