@@ -7,7 +7,6 @@ import { addElement, removeElement, changeArr } from './redux/constants';
 
 const defaultState = localStorage.getItem('tasks') ? JSON.parse(localStorage.getItem('tasks')) : [];
 
-//action = {type, payload}
 const reducer = (state = defaultState, action) => {
   switch (action.type) {
     case addElement():

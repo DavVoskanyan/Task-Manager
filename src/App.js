@@ -16,6 +16,7 @@ function App() {
   const all = useSelector(state => state)
   const [show, setShow] = useState(sortArr(all))
 
+ 
   function sortArr(arr) {
     let a = []
     let b = []

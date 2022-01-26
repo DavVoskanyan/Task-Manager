@@ -48,6 +48,7 @@
 .state {
     width: 120px;
     font-family: 'Roboto', sans-serif;
+    cursor: pointer;
 }
 .remove {
     width: 26px;
