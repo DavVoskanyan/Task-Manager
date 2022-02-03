@@ -6,7 +6,6 @@ import App from './App';
 import { addElement, removeElement, changeArr } from './redux/constants';
 
 const defaultState = localStorage.getItem('tasks') ? JSON.parse(localStorage.getItem('tasks')) : [];
-
 //action = {type, payload}
 const reducer = (state = defaultState, action) => {
   switch (action.type) {
@@ -19,7 +18,7 @@ const reducer = (state = defaultState, action) => {
       return state.filter(elem => elem.id !== action.payload)
 
     case changeArr():
-      localStorage.setItem('task', JSON.stringify(action.payload))
+      localStorage.setItem('tasks', JSON.stringify(action.payload))
       return action.payload
 
     default:

@@ -7,10 +7,11 @@ import TaskList from './components/TaskList.jsx';
 import { addElement, removeElement, changeArr } from './redux/constants';
 
 function App() {
+  const [taskId, setTaskId] = useState(null);
 
-
-
-
+  const getId = (id) => {
+    setTaskId(id);
+  }
   const dispatch = useDispatch()
 
   const all = useSelector(state => state)
@@ -61,10 +62,10 @@ function App() {
 
   return (
     <div className="App">
-      <Header changeList={changeList}/>
+      <Header changeList={changeList} taskId={taskId}/>
       <div className="taskDiv">
         <NewTask createTask={createTask}/>
-        {all.length === 0 ? <h1 className="noTasks">There are no any tasks...</h1> : <TaskList arr={show} remove={remove} change={change}/>}
+        {all.length === 0 ? <h1 className="noTasks">There are no any tasks...</h1> : <TaskList getId={getId} arr={show} remove={remove} change={change}/>}
       </div>
     </div>
   );

@@ -6,7 +6,7 @@ const TaskList = ({arr, ...props}) => {
         <div className='taskList'>
             {arr.map(task => {
                 return(
-                    <Task key={task.id} id={task.id} title={task.title} description={task.description} state={task.state} priority={task.priority} remove={props.remove} change={props.change}></Task>
+                    <Task key={task.id} getId={props.getId} task={task} remove={props.remove} change={props.change}></Task>
                 )
             })}
         </div>
